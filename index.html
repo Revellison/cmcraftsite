@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CmCraft - Ванильный сервер по майнкрафту</title>
+<link href=".cssbuttons-io-button {" rel="stylesheet">
+<link href=".cssbuttons-io-button .icon {" rel="stylesheet">
+<link href=".cssbuttons-io-button:hover .icon {" rel="stylesheet">
+<link href=".cssbuttons-io-button .icon svg {" rel="stylesheet">
+<link href=".cssbuttons-io-button:hover .icon svg {" rel="stylesheet">
+<link href=".cssbuttons-io-button:active .icon {" rel="stylesheet">
+<link href="cmCraft.css" rel="stylesheet">
+<link href="index.css" rel="stylesheet">
+<script src="popper.min.js"></script>
+<script src="bootstrap.min.js"></script>
+<script src="jquery-3.7.1.min.js"></script>
+<script src="wwb19.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function(event)
+{
+   var onas = document.querySelector('#onas');
+   var bsonas = new bootstrap.Modal(onas);
+   onas.addEventListener('show.bs.modal', function(e)
+   {
+      var dlg = document.querySelector('#onas .modal-dialog');
+      dlg.classList.remove('animate-hide');
+      dlg.classList.add('animate-show');
+   });
+   onas.addEventListener('hide.bs.modal', function(e)
+   {
+      var dlg = document.querySelector('#onas .modal-dialog');
+      dlg.classList.remove('animate-show');
+      var forceReflow = e.target.offsetWidth;
+      dlg.classList.add('animate-hide');
+   });
+});
+</script>
+</head>
+<body>
+<div id="wb_LayoutGrid1">
+<div id="LayoutGrid1">
+<div class="row">
+<div class="col-1">
+<div id="wb_Image1">
+<img src="images/minecraft_title.png" id="Image1" alt="" width="940" height="196">
+</div>
+<div id="FlexContainer1">
+<input type="submit" id="Button4" name="" value="Услуги">
+<input type="submit" id="Button5" onclick="$('#onas').modal('show');return false;" name="" value="О нас">
+<input type="submit" id="Button2" name="" value="Правила">
+</div>
+<div id="wb_LayoutGrid2">
+<div id="LayoutGrid2">
+<div class="row">
+<div class="col-1">
+<div id="Html1">
+  <form action="https://vk.com/im?sel=-201145305" method="get">
+ <link rel="stylesheet" href="startbutton.css">
+<button class="cssbuttons-io-button">
+  Подать заявку
+  <div class="icon">
+    <svg
+      height="24"
+      width="24"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path d="M0 0h24v24H0z" fill="none"></path>
+      <path
+        d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+        fill="currentColor"
+      ></path>
+    </svg>
+  </div>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="onas" class="modal fade" role="dialog">
+<div class="modal-dialog modal-dialog-centered">
+<div class="modal-content">
+<div class="modal-body">
+<button type="button" class="close" data-bs-dismiss="modal" aria-hidden="true">&times;</button>
+<div id="wb_Card1" class="card">
+<div id="Card1-card-body">
+<div id="Card1-card-item0">У нас нет донатов, приватов, телепортов, мини-игр и прочей чепухи. Игра практически полностью соответствует ванильному выживанию, которое вы привыкли видеть в одиночном Майнкрафте. Это главный принцип нашего проекта.<br> Ваша роль и вид деятельности на сервере ограничены лишь правилами и рамками игры. Быть богатым шахтёром или простым фермером, строителем или воином, главой небольшого поселения или лидером великой империи — решать только вам. Никаких плагинов на города, кланы и тому подобную бесовщину вы у нас не найдете. Вся организация и взаимодействие игроков осуществляется в свободной форме, без формальных ограничений.<br><br> Любые формы доната у нас подчистую отсутствуют. Игроки не могут купить админку, ресурсы или префикс — абсолютно все уравнены в правах. Сервер содержится на инициативе руководства и добровольных пожертвованиях. Наши администраторы получили свои роли не за деньги, а за желание организовывать приятную и комфортную игру для каждого участника нашего сообщества.</div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
