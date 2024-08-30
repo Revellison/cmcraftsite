@@ -1897,6 +1897,10 @@ body
 }
 #Button15
 {
+   box-sizing: border-box;
+   line-height: 55px;
+   text-decoration: none;
+   vertical-align: top;
    border-top-width: 0px;
    border-right-width: 0px;
    border-bottom-width: 0px;
@@ -2057,6 +2061,10 @@ body
 }
 #Button17
 {
+   box-sizing: border-box;
+   line-height: 55px;
+   text-decoration: none;
+   vertical-align: top;
    border-top-width: 0px;
    border-right-width: 0px;
    border-bottom-width: 0px;
@@ -3266,6 +3274,10 @@ body
    margin: 0;
    padding: 1px 6px 1px 6px;
 }
+#Button15
+{
+   line-height: 49px;
+}
 #Button16
 {
    width: 62px;
@@ -3317,6 +3329,10 @@ body
    display: inline-block;
    margin: 0;
    padding: 1px 6px 1px 6px;
+}
+#Button17
+{
+   line-height: 27px;
 }
 #Button18
 {
@@ -4296,6 +4312,10 @@ body
    margin: 0;
    padding: 1px 6px 1px 6px;
 }
+#Button15
+{
+   line-height: 27px;
+}
 #Button16
 {
    width: 57px;
@@ -4347,6 +4367,10 @@ body
    display: inline-block;
    margin: 0;
    padding: 1px 6px 1px 6px;
+}
+#Button17
+{
+   line-height: 41px;
 }
 #Button18
 {
