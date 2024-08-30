@@ -1,9 +1,10 @@
 <!doctype html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
 <meta charset="utf-8">
-<title>CmCraft - Ванильный сервер по майнкрафту</title>
+<title>CmCraft - Ванильный майнкрафт сервер</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="swiper-bundle.min.css" rel="stylesheet">
 <link href=".cssbuttons-io-button {" rel="stylesheet">
 <link href=".cssbuttons-io-button .icon {" rel="stylesheet">
 <link href=".cssbuttons-io-button:hover .icon {" rel="stylesheet">
@@ -12,13 +13,32 @@
 <link href=".cssbuttons-io-button:active .icon {" rel="stylesheet">
 <link href="cmCraft.css" rel="stylesheet">
 <link href="index.css" rel="stylesheet">
+<script src="swiper-bundle.min.js"></script>
 <script src="popper.min.js"></script>
 <script src="bootstrap.min.js"></script>
 <script src="jquery-3.7.1.min.js"></script>
+<script src="jquery-ui.min.js"></script>
 <script src="wwb19.min.js"></script>
 <script>
 document.addEventListener('DOMContentLoaded', function(event)
 {
+   var swiper = new Swiper('#SlideShow1',
+   {
+      effect: 'slide',
+      speed: 500,
+      grabCursor: true,
+      centeredSlides: true,
+      autoplay:
+      {
+         delay: 2500,
+         disableOnInteraction: false,
+      },
+      navigation:
+      {
+         nextEl: '.carousel-control-next',
+         prevEl: '.carousel-control-prev'
+      }
+   });
    var onas = document.querySelector('#onas');
    var bsonas = new bootstrap.Modal(onas);
    onas.addEventListener('show.bs.modal', function(e)
@@ -36,22 +56,40 @@ document.addEventListener('DOMContentLoaded', function(event)
    });
 });
 </script>
+<script>
+$(document).ready(function()
+{
+   $("#FlipSwitch1").change(function()
+   {
+      if ($('#FlipSwitch1').is(':checked'))
+      {
+         ShowObjectWithEffect('SlideShow1', 0, 'fade', 1);
+      }
+      if (!$('#FlipSwitch1').is(':checked'))
+      {
+         ShowObjectWithEffect('SlideShow1', 1, 'fade', 1);
+      }
+   });
+   $("#FlipSwitch1").trigger('change');
+});
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1"
 </head>
 <body>
-<div id="wb_LayoutGrid1">
-<div id="LayoutGrid1">
+<div id="wb_LayoutGrid6">
+<div id="LayoutGrid6">
 <div class="row">
 <div class="col-1">
 <div id="wb_Image1">
 <img src="images/minecraft_title.png" id="Image1" alt="" width="940" height="196">
 </div>
 <div id="FlexContainer1">
-<input type="submit" id="Button4" name="" value="Услуги">
-<input type="submit" id="Button5" onclick="$('#onas').modal('show');return false;" name="" value="О нас">
-<input type="submit" id="Button2" name="" value="Правила">
+<a id="Button7" href="https://vk.com/uslugi-201145305?screen=group">Услуги</a>
+<input type="submit" id="Button8" onclick="$('#onas').modal('show');return false;" name="" value="О нас">
+<a id="Button6" href="./rules.html">Правила</a>
 </div>
-<div id="wb_LayoutGrid2">
-<div id="LayoutGrid2">
+<div id="wb_LayoutGrid7">
+<div id="LayoutGrid7">
 <div class="row">
 <div class="col-1">
 <div id="Html1">
@@ -92,6 +130,70 @@ document.addEventListener('DOMContentLoaded', function(event)
 <div id="Card1-card-body">
 <div id="Card1-card-item0">У нас нет донатов, приватов, телепортов, мини-игр и прочей чепухи. Игра практически полностью соответствует ванильному выживанию, которое вы привыкли видеть в одиночном Майнкрафте. Это главный принцип нашего проекта.<br> Ваша роль и вид деятельности на сервере ограничены лишь правилами и рамками игры. Быть богатым шахтёром или простым фермером, строителем или воином, главой небольшого поселения или лидером великой империи — решать только вам. Никаких плагинов на города, кланы и тому подобную бесовщину вы у нас не найдете. Вся организация и взаимодействие игроков осуществляется в свободной форме, без формальных ограничений.<br><br> Любые формы доната у нас подчистую отсутствуют. Игроки не могут купить админку, ресурсы или префикс — абсолютно все уравнены в правах. Сервер содержится на инициативе руководства и добровольных пожертвованиях. Наши администраторы получили свои роли не за деньги, а за желание организовывать приятную и комфортную игру для каждого участника нашего сообщества.</div>
 </div></div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid8">
+<div id="LayoutGrid8">
+<div class="row">
+<div class="col-1">
+<div id="wb_Text1">
+<span style="color:#000000;font-family:Arial;font-size:16px;"> </span><span style="color:#D3D3D3;font-family:Bahnschrift;font-size:16px;">Отключить </span>
+</div>
+<div id="wb_FlipSwitch1">
+<input type="checkbox" role="switch" name="" id="FlipSwitch1" value="">
+<label id="FlipSwitch1-label" for="FlipSwitch1">
+<span id="FlipSwitch1-inner"></span>
+<span id="FlipSwitch1-switch"></span>
+</label>
+</div>
+<hr id="HorizontalLine1">
+<div id="SlideShow1" class="swiper">
+<div class="swiper-wrapper">
+<div class="swiper-slide">
+<img class="image" loading="lazy" width="1920" height="1080" src="images/13.png" alt="" title="">
+</div>
+<div class="swiper-slide">
+<img class="image" loading="lazy" width="1920" height="1080" src="images/12.png" alt="" title="">
+</div>
+<div class="swiper-slide">
+<img class="image" loading="lazy" width="1920" height="1080" src="images/11.png" alt="" title="">
+</div>
+<div class="swiper-slide">
+<img class="image" loading="lazy" width="1920" height="1080" src="images/10.png" alt="" title="">
+</div>
+<div class="swiper-slide">
+<img class="image" loading="lazy" width="1920" height="1080" src="images/9.png" alt="" title="">
+</div>
+<div class="swiper-slide">
+<img class="image" loading="lazy" width="1920" height="1080" src="images/8.png" alt="" title="">
+</div>
+<div class="swiper-slide">
+<img class="image" loading="lazy" width="1920" height="1080" src="images/7.png" alt="" title="">
+</div>
+<div class="swiper-slide">
+<img class="image" loading="lazy" width="1920" height="1080" src="images/6.png" alt="" title="">
+</div>
+<div class="swiper-slide">
+<img class="image" loading="lazy" width="1920" height="1080" src="images/5.png" alt="" title="">
+</div>
+<div class="swiper-slide">
+<img class="image" loading="lazy" width="1920" height="1080" src="images/4.png" alt="" title="">
+</div>
+<div class="swiper-slide">
+<img class="image" loading="lazy" width="1920" height="1080" src="images/3.png" alt="" title="">
+</div>
+<div class="swiper-slide">
+<img class="image" loading="lazy" width="1920" height="1080" src="images/2.png" alt="" title="">
+</div>
+<div class="swiper-slide">
+<img class="image" loading="lazy" width="1920" height="1080" src="images/1.png" alt="" title="">
+</div>
+</div>
+<div id="SlideShow1_back"><a class="carousel-control-prev" role="button"><span class="carousel-control-prev-icon" aria-hidden="true"></span></a></div>
+<div id="SlideShow1_next"><a class="carousel-control-next" role="button"><span class="carousel-control-next-icon" aria-hidden="true"></span></a></div>
+</div>
 </div>
 </div>
 </div>
